@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Blank</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @media (prefers-color-scheme: light) {
+            :root {
+                --color: #F7F7F7;
+            }
+            body {
+                background-color: #3F3F44;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color: #3F3F44;
+            }
+            body {
+                background-color: #FFF;
+            }
+        }
+        html,body {
+            color: var(--color);
+            height: 100%;
+            font-family: Roboto;
+        }
+        ::-webkit-scrollbar {q
+        display: none;
+        }
+        #title {
+            font-family: Roboto;
+            margin-top: 2%;
+            padding-bottom: 1%;
+            margin-left: 2%;
+        }
+        #stories {
+            display: grid;
+            column-gap: 5%;
+            padding: 0px;
+            grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+            margin-left: 2%;
+
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(160px,1fr);
+            overflow-x: auto;
+        }
+        #info {
+            margin-left: 2%;
+        }
+        #links {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .link {
+            margin-left: 2%;
+        }
+        #descriptionTitle {
+            margin-top: 4%;
+            margin-left: 2%;
+        }
+        #description {
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .story {
+            margin-left: 2%;
+        }
+    </style>
+</head>
+<body>
+<h1 id="title">Ping</h1>
+<p id="info">A notification customization tweak.</p>
+<p id="links">
+    <a class="link" href="https://github.com/justnaa/pingtweak">
+        <img src="../../branding/GitHub-Mark-120px-plus.png" width="40" height="40" />
+    </a>
+</p>
+<div id="stories">
+    <img src="image.png" width="207" height="448" class="story" />
+    <img src="imageone.PNG" width="207" height="448" class="story" />
+
+</div>
+<h1 id="descriptionTitle">Description</h1>
+<p id="description">Ping is a notification customization tweak that allows you to change the colour and radius of notifications. Ping also allows you to change the header of the notification list.</p>
+</body>
+</html>
